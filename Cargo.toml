@@ -1,0 +1,31 @@
+[package]
+name = "libfabric-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Philipp Sippl"]
+description = "Async Rust wrapper for libfabric with EFA support"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yourusername/libfabric-rs"
+readme = "README.md"
+keywords = ["libfabric", "rdma", "efa", "networking", "async"]
+categories = ["network-programming", "asynchronous"]
+
+[dependencies]
+tokio = { version = "1.40", features = ["net", "rt", "sync", "io-util", "time"] }
+libc = "0.2"
+eyre = "0.6"
+serde = { version = "1.0", features = ["derive"] }
+
+[dev-dependencies]
+clap = { version = "4.4", features = ["derive"] }
+tokio = { version = "1.40", features = ["full"] }
+
+[build-dependencies]
+bindgen = "0.72.0"
+cc = "1.2"
+pkg-config = "0.3"
+
+[features]
+default = []
+# Add features as needed
+efa = []
