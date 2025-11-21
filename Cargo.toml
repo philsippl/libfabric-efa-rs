@@ -1,10 +1,10 @@
 [package]
-name = "libfabric-rs"
+name = "libfabric-efa-rs"
 version = "0.1.0"
 edition = "2021"
 authors = ["Philipp Sippl"]
 description = "Async Rust wrapper for libfabric with EFA support"
-license = "MIT OR Apache-2.0"
+license = "MIT"
 repository = "https://github.com/yourusername/libfabric-rs"
 readme = "README.md"
 keywords = ["libfabric", "rdma", "efa", "networking", "async"]
