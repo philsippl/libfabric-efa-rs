@@ -1,4 +1,4 @@
-# libfabric-rs
+# libfabric-efa-rs
 
 High-performance async Rust wrapper for libfabric with EFA support.
 
